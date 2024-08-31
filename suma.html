@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function sumarNumeros() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let suma = num1 + num2;
+            document.getElementById("resultado").innerText = "La suma de " + num1 + " y " + num2 + " es " + suma;
+        }
+    </script>
+</head>
+<body>
+    <label for="num1">Ingrese el primer numero:</label>
+    <input type="number" id="num1" step="any"><br><br>
+    <label for="num2">Ingrese el segundo numero:</label>
+    <input type="number" id="num2" step="any"><br><br>
+    <button onclick="sumarNumeros()">Calcular Suma</button><br><br>
+    <p id="resultado"></p>
+</body>
+</html>
